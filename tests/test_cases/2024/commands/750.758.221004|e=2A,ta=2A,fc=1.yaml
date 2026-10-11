@@ -1,0 +1,51 @@
+command_id: 750.758.221004|e=2A,ta=2A,fc=1
+test_cases:
+- expected_values:
+    RC_TT_1: null
+    RC_TT_2: null
+    RC_TT_3: null
+    RC_TT_4: null
+    RC_TT_5: null
+  response: |-
+    7582A10086210040000
+    7582A21000000000000
+- expected_values:
+    RC_TT_1: 24
+    RC_TT_2: 26
+    RC_TT_3: 24
+    RC_TT_4: 27
+  response: |-
+    7582A10086210044042
+    7582A21404300000000
+- expected_values:
+    RC_TT_1: 26
+    RC_TT_2: 30
+    RC_TT_3: 26
+    RC_TT_4: 31
+  response: |-
+    7582A10086210044246
+    7582A21424700000000
+- expected_values:
+    RC_TT_1: 29
+    RC_TT_2: 30
+    RC_TT_3: 28
+    RC_TT_4: 30
+  response: |-
+    7582A10086210044546
+    7582A21444600000000
+- expected_values:
+    RC_TT_1: 29
+    RC_TT_2: 31
+    RC_TT_3: 28
+    RC_TT_4: 31
+  response: |-
+    7582A10086210044547
+    7582A21444700000000
+- expected_values:
+    RC_TT_1: 29
+    RC_TT_2: 31
+    RC_TT_3: 29
+    RC_TT_4: 31
+  response: |-
+    7582A10086210044547
+    7582A21454700000000
