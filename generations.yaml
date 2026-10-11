@@ -1,0 +1,8 @@
+references:
+  - "https://en.wikipedia.org/wiki/Lexus_RC"
+
+generations:
+  - name: "First Generation (XC10)"
+    start_year: 2015
+    end_year: null
+    description: "A rear-drive coupe with 2.0 L turbo, 3.5 L V6 and 2.5 L hybrid powertrains, and the 5.0 L V8 RC F."
