@@ -1,0 +1,32 @@
+command_id: 701.709.220103
+test_cases:
+- expected_values:
+    RC_ODO: 22871
+  response: '7090762010302005957'
+- expected_values:
+    RC_ODO: 22957
+  response: 70907620103020059AD
+- expected_values:
+    RC_ODO: 22958
+  response: 70907620103020059AE
+- expected_values:
+    RC_ODO: 22959
+  response: 70907620103020059AF
+- expected_values:
+    RC_ODO: 22960
+  response: 70907620103020059B0
+- expected_values:
+    RC_ODO: 22961
+  response: 70907620103020059B1
+- expected_values:
+    RC_ODO: 22962
+  response: 70907620103020059B2
+- expected_values:
+    RC_ODO: 22963
+  response: 70907620103020059B3
+- expected_values:
+    RC_ODO: 22964
+  response: 70907620103020059B4
+- expected_values:
+    RC_ODO: 22965
+  response: 70907620103020059B5
