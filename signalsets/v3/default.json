@@ -304,7 +304,7 @@
   ]},
 { "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1621"}, "freq": 0.25,
   "signals": [
-    {"id": "RC_GEAR_V2", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Gear"}
+    {"id": "RC_GEAR_V2", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Gear", "suggestedMetric": "gear"}
   ]},
 { "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1622"}, "freq": 1,
   "signals": [
@@ -735,8 +735,8 @@
     {"id": "RC_CALCULATED_LOAD_7E0",      "path": "Engine",   "fmt": {            "len": 8,  "max": 100,                  "mul": 100, "div": 255,              "unit": "percent"           }, "name": "Calculated load",              "suggestedMetric": "engineLoad"},
     {"id": "RC_VEHICLE_LOAD",             "path": "Engine",   "fmt": {"bix": 8,   "len": 16, "max": 25700,                "mul": 100, "div": 255,              "unit": "percent"           }, "name": "Vehicle load"},
     {"id": "RC_MAF",                      "path": "Engine",   "fmt": {"bix": 24,  "len": 16, "max": 655,                              "div": 100,              "unit": "gramsPerSecond"    }, "name": "Mass air flow",                "suggestedMetric": "massAirFlow"},
-    {"id": "RC_MAP",                      "path": "Engine",   "fmt": {"bix": 40,  "len": 8,  "max": 255,                                                       "unit": "kilopascal"        }, "name": "Manifold absolute pressure"},
-    {"id": "RC_INTAKE_AIR",               "path": "Engine",   "fmt": {"bix": 48,  "len": 8,  "max": 215,      "min": -40,                          "add": -40, "unit": "celsius"           }, "name": "Intake air"},
+    {"id": "RC_MAP",                      "path": "Engine",   "fmt": {"bix": 40,  "len": 8,  "max": 255,                                                       "unit": "kilopascal"        }, "name": "Manifold absolute pressure",   "suggestedMetric": "absoluteBoostPressure"},
+    {"id": "RC_INTAKE_AIR",               "path": "Engine",   "fmt": {"bix": 48,  "len": 8,  "max": 215,      "min": -40,                          "add": -40, "unit": "celsius"           }, "name": "Intake air",                   "suggestedMetric": "intakeAirTemperature"},
     {"id": "RC_ATMOSPHERE_PRESSURE",      "path": "Engine",   "fmt": {"bix": 56,  "len": 8,  "max": 255,                                                       "unit": "kilopascal"        }, "name": "Atmosphere pressure"},
     {"id": "RC_COOLANT_TEMP",             "path": "Engine",   "fmt": {"bix": 64,  "len": 8,  "max": 215,      "min": -40,                          "add": -40, "unit": "celsius"           }, "name": "Engine coolant temperature",   "suggestedMetric": "engineCoolantTemperature"},
     {"id": "RC_ENGINE_SPEED",             "path": "Movement", "fmt": {"bix": 72,  "len": 16, "max": 16383.75,                         "div": 4,                "unit": "rpm"               }, "name": "Engine speed",                 "suggestedMetric": "engineSpeed"},
@@ -773,7 +773,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "06"}, "freq": 30,
   "signals": [
-    {"id": "RC_MIL",                       "path": "DTCs", "fmt": {           "len": 1,  "max": 1,     "unit": "offon"      }, "name": "Malfunction indicator lamp"},
+    {"id": "RC_MIL",                       "path": "DTCs", "fmt": {           "len": 1,  "max": 1,     "unit": "offon"      }, "name": "Malfunction indicator lamp",                                              "suggestedMetric": "checkEngineLightOn"},
     {"id": "RC_NUMBER_OF_EMISSION_DTC",    "path": "DTCs", "fmt": {"bix": 1,  "len": 7,  "max": 127,   "unit": "scalar"     }, "name": "Number of emission DTC"},
     {"id": "RC_COMPLETE_PARTS_MON",        "path": "DTCs", "fmt": {"bix": 13, "len": 1,  "max": 1,     "unit": "offon"      }, "name": "Complete parts monitor, available"},
     {"id": "RC_FUEL_SYSTEM_MONITOR_AVAIL", "path": "DTCs", "fmt": {"bix": 14, "len": 1,  "max": 1,     "unit": "offon"      }, "name": "Fuel system monitor, available"},
@@ -974,7 +974,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "D3"}, "freq": 0.25,
   "signals": [
-    {"id": "RC_CRUISE_CTRL_SPD", "path": "Movement", "fmt": {"bix": 8,  "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Cruise control speed"},
+    {"id": "RC_CRUISE_CTRL_SPD", "path": "Movement", "fmt": {"bix": 8,  "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Cruise control speed", "suggestedMetric": "cruiseSetSpeed"},
     {"id": "RC_CRUISE_CTRL_ON",  "path": "Engine",   "fmt": {"bix": 25, "len": 1, "max": 1,   "unit": "offon"             }, "name": "Cruise control on"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "D9"}, "freq": 5,
