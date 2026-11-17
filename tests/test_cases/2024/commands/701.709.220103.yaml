@@ -1,32 +1,42 @@
 command_id: 701.709.220103
 test_cases:
 - expected_values:
-    RC_ODO: 22871
+    RC_ODO_RAW: 22871
+    RC_ODO_UNIT: MI
   response: '7090762010302005957'
 - expected_values:
-    RC_ODO: 22957
+    RC_ODO_RAW: 22957
+    RC_ODO_UNIT: MI
   response: 70907620103020059AD
 - expected_values:
-    RC_ODO: 22958
+    RC_ODO_RAW: 22958
+    RC_ODO_UNIT: MI
   response: 70907620103020059AE
 - expected_values:
-    RC_ODO: 22959
+    RC_ODO_RAW: 22959
+    RC_ODO_UNIT: MI
   response: 70907620103020059AF
 - expected_values:
-    RC_ODO: 22960
+    RC_ODO_RAW: 22960
+    RC_ODO_UNIT: MI
   response: 70907620103020059B0
 - expected_values:
-    RC_ODO: 22961
+    RC_ODO_RAW: 22961
+    RC_ODO_UNIT: MI
   response: 70907620103020059B1
 - expected_values:
-    RC_ODO: 22962
+    RC_ODO_RAW: 22962
+    RC_ODO_UNIT: MI
   response: 70907620103020059B2
 - expected_values:
-    RC_ODO: 22963
+    RC_ODO_RAW: 22963
+    RC_ODO_UNIT: MI
   response: 70907620103020059B3
 - expected_values:
-    RC_ODO: 22964
+    RC_ODO_RAW: 22964
+    RC_ODO_UNIT: MI
   response: 70907620103020059B4
 - expected_values:
-    RC_ODO: 22965
+    RC_ODO_RAW: 22965
+    RC_ODO_UNIT: MI
   response: 70907620103020059B5
